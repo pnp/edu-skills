@@ -1,0 +1,13 @@
+{
+  "name": "edu-skills",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "validate:skills": "node scripts/validate-skills.js",
+    "check": "npm run validate:skills"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
