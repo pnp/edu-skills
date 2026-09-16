@@ -7,7 +7,7 @@ A community library of reusable Copilot skills for teaching, learning, and educa
 Skills are organized by the Microsoft 365 product where the workflow runs:
 
 - [Excel](skills/excel/) - 2 skills for scheduling and calendar planning
-- [PowerPoint](skills/powerpoint/) - 13 skills for instruction, review, and presentation design
+- [PowerPoint](skills/powerpoint/) - 11 skills for instruction, review, and presentation design
 - [SharePoint](skills/sharepoint/) - 3 skills for assignment submission workflows
 
 Each skill has a `SKILL.md` file with its trigger phrases, required inputs, workflow, safety guidance, and validation steps. Some skills also include reusable references or sample data.
