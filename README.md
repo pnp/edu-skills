@@ -2,6 +2,8 @@
 
 A community library of reusable Copilot skills for teaching, learning, and education operations.
 
+Browse the published gallery at [pnp.github.io/edu-skills](https://pnp.github.io/edu-skills/).
+
 ## Skill Library
 
 Skills are organized by the Microsoft 365 product where the workflow runs:

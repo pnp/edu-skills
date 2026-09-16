@@ -43,6 +43,31 @@ skills/
         `-- assets/       # optional images or supporting files
 ```
 
+## Optional gallery metadata
+
+Add `catalog.json` beside `SKILL.md` only when the generated defaults are not enough. The supported fields are:
+
+```json
+{
+    "title": "Create a reading log",
+    "description": "Turn a class reading list into a review-ready tracking workbook.",
+    "category": "Teaching & Learning",
+    "audiences": ["Educator"],
+    "icon": "book",
+    "prompt": "@create-reading-log Build a reading log from this list.",
+    "updated": "2026-09-16",
+    "featured": false,
+    "media": {
+        "type": "image",
+        "src": "assets/preview.png",
+        "alt": "Reading log workbook with title, status, and reflection columns",
+        "caption": "Example output using fictional class data."
+    }
+}
+```
+
+Use one of these categories: `Teaching & Learning`, `Data & Insights`, `Planning & Operations`, `Communication`, or `Accessibility`. Media may use `image`, `gif`, or `video`. Store local media inside the skill folder; remote media must use HTTPS. Every media item needs meaningful `alt` text. Video also requires a `poster` image. Keep previews brief, readable without audio, free of personal data, and small enough for a web page.
+
 ## Review
 
 Maintainers review usefulness, instruction quality, privacy, accessibility, responsible AI, and whether the validation steps are credible. A passing automated check does not replace human review.

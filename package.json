@@ -5,7 +5,18 @@
   "type": "module",
   "scripts": {
     "validate:skills": "node scripts/validate-skills.js",
-    "check": "npm run validate:skills"
+    "generate:catalog": "node scripts/generate-catalog.js",
+    "dev": "npm run generate:catalog && vite site --config site/vite.config.js",
+    "build": "npm run generate:catalog && vite build site --config site/vite.config.js",
+    "check": "npm run validate:skills && npm run build"
+  },
+  "dependencies": {
+    "@fluentui/svg-icons": "^1.1.334",
+    "@fluentui/tokens": "^1.0.0-alpha.23",
+    "@fluentui/web-components": "^3.0.3"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1"
   },
   "engines": {
     "node": ">=22"
